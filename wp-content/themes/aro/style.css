@@ -1,0 +1,928 @@
+/*
+Theme Name: aro
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aro
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+aro is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+
+body,html{
+	
+	height:100%;
+	position: relative;
+
+}
+
+header{
+	
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+
+#blackout{
+	
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+	visibility:hidden;
+}
+
+#page{
+	
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	z-index: 1;
+}
+
+#slide{
+
+	position: relative;
+	top:0;
+	left:0;
+	height:0vh;
+	background-color:#22232b;
+	z-index: 0;
+	overflow : auto;
+}
+
+#navigation{
+	
+	height:100vh;
+	width: 90px;
+	background-color:white;
+	float:left;
+	margin:0;
+	padding:0;
+	position: fixed;
+	left:-5%;
+	border-right:1px solid #e7e7e7;
+	z-index: 3;
+	cursor: pointer;
+
+
+}
+
+
+#content{
+	
+	height:100vh;
+	background-color:white;
+	padding:0;
+	opacity: 0;
+	position:relative;
+	top:40px;
+	z-index: 1;
+	
+}
+
+#showcase{
+	
+	height:100vh;
+	position: relative;
+}
+
+.scroll-icon{
+	
+	width:150px;
+    position: absolute;
+    bottom:0;
+    left:45%;
+    z-index: 10;
+}
+
+
+.lines{
+    width:450px;
+    position: absolute;
+    top:-280px;
+    left:40%;
+    opacity: 0;
+    z-index: 10;
+}
+
+h1{
+	
+	font-family: 'Playfair Display', serif;
+	font-size:5.4em;
+	margin-bottom: 60px;
+	font-weight: 500;
+	color:#fff;
+	letter-spacing: 1px;
+}
+
+h1 span{
+	
+	color:#E54948;
+	font-weight: bold;
+}
+
+
+.showcase-title{
+	
+	position: absolute;
+	top:40%;
+	left:220px;
+	z-index: 4;
+	font-size:6em;
+	-webkit-animation-delay: 2.9s;
+	-webkit-animation-duration: 2s;
+}
+
+.showcase-subtitle{
+	
+	position: absolute;
+	top:58%;
+	left:220px;
+	z-index: 4;
+	font-size:2.5em;
+	font-weight: 400;
+	color:#fff;
+	letter-spacing: 1px;
+	-webkit-animation-delay: 3.5s;
+	-webkit-animation-duration: 2s;
+}
+
+#showcase img{
+	
+	width:100%;
+	height:100%;
+	
+}
+
+.intro{
+	
+	padding:300px 0px;
+	background-color:#f3f3f3;
+	display: block;
+	margin-bottom: 0px;
+	position: relative;
+	background-image: url('img/pattern.svg');
+	background-repeat: no-repeat;
+	background-position:top;
+
+}
+
+.intro h2{
+	
+	margin-bottom: 80px;
+}
+
+.intro p{
+	
+
+	line-height: 2em;
+	font-size:1.7em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#222;
+}
+
+h2{
+	
+	font-family: 'Playfair Display', serif;
+	font-size:4.2em;
+	margin-bottom: 60px;
+	font-weight: 400;
+}
+
+h2 span{
+	
+	color:#E54948;
+}
+
+a{
+	color:#E54948;
+}
+
+
+.site-menu{
+	
+	position: absolute;
+	bottom:0;
+	height:80px;
+	left:0;
+	border-top:1px solid #e7e7e7;
+	padding:30px;
+	width:100%;
+}
+
+.stage-name{
+	
+	
+}
+
+.close-nav{
+	
+	visibility: hidden;
+	position: absolute;
+	left:30px;
+
+}
+
+.menu-menu-container{
+	
+	position:relative;
+	top:30vh;
+	left:20px;
+	opacity: 0;
+	width:350px;
+	visibility: hidden;
+}
+
+.menu-menu-container ul{
+	
+	display:block;
+	margin:0px;
+	padding:0px;
+}
+
+.menu-menu-container ul li{
+	
+	display:block;
+	list-style-type:none;
+	margin:0px 0px;
+	padding:1px 0px;
+	font-size:4.2em;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+.menu-menu-container ul li a{
+	
+	color:black;
+}
+
+/* Intro classes
+--------------------------------------------------------------*/
+
+#intro-title{
+	-webkit-animation-delay: .8s;
+}
+
+.intro-summary{
+	-webkit-animation-delay: 1s;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/* Featured portfolio items
+--------------------------------------------------------------*/
+
+#featured-portfolio{
+	
+	margin:0;
+	padding:0;
+	
+}
+
+#project-item{
+
+	height: 600px;
+	position: relative;
+}
+
+#project-item img{
+	
+ display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.skinmd{
+	background-color: #5483cf;
+	background: #557dd3; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #557dd3 0%, #4cacb5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #557dd3 0%,#4cacb5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #557dd3 0%,#4cacb5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#557dd3', endColorstr='#4cacb5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	position: relative;
+	overflow: hidden;
+}
+
+
+.skinmd-img{
+	
+	opacity: 0;
+	position:absolute;
+	top:0;
+	left:0;
+	background-image: url('http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/skinmd-1.jpg');
+	background-repeat: no-repeat;
+	height: 100%;
+	width:100%;
+    background-size:cover;
+	-webkit-animation-delay: 1.1s;
+	-webkit-animation-duration: 1s;
+}
+.watkins{
+	
+	background-color: #BE797D;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#417db0+0,be797d+100 */
+	background: #417db0; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #417db0 0%, #be797d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #417db0 0%,#be797d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #417db0 0%,#be797d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#417db0', endColorstr='#be797d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.watkins img{
+	
+	opacity: 0;
+	-webkit-animation-delay: 1.3s;
+	-webkit-animation-duration: 1s;
+
+}
+
+.goebel{
+	
+	background-color: #374049;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#374049+0,4f8497+100 */
+	background: #374049; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #374049 0%, #4f8497 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #374049 0%,#4f8497 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #374049 0%,#4f8497 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#374049', endColorstr='#4f8497',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.goebel img{
+	opacity: 0;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-duration: 1s;
+
+}
+
+.nswm{
+	
+	background-color: red;
+	background: #c12a32; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #c12a32 0%, #ec7c1e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #c12a32 0%,#ec7c1e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #c12a32 0%,#ec7c1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c12a32', endColorstr='#ec7c1e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.nswm img{
+	opacity: 0;
+	-webkit-animation-delay: 1.7s;
+	-webkit-animation-duration: 1s;
+	
+}
+
+.hentry{
+	margin:0;
+	padding:0;
+}
+
+#project-item h3{
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom:125px;
+	left:70px;
+	color:white;
+	font-family: 'Playfair Display', serif;
+	font-size:3.3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+}
+
+#project-item h4{
+	
+	margin:0;
+	padding:0;
+	position: absolute;
+	bottom:90px;
+	left:70px;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	-webkit-animation-delay: 1.3s;
+	-webkit-animation-duration: 1s;
+}
+
+/* Portfolio Template 
+--------------------------------------------------------------*/
+
+#portfolio-hero{
+	
+	
+	width:100vw;
+	position: relative;
+	
+}
+
+
+
+#portfolio-hero img{
+	
+	width:100%;
+	height:100%;
+	
+}
+
+
+
+.portfolio-title{
+	
+	position: absolute;
+	top:52%;
+	left:220px;
+	z-index: 4;
+	font-size:6em;
+	font-weight: 600;
+	-webkit-animation-delay: 2.5s;
+	-webkit-animation-duration: 2s;
+}
+
+.portfolio-subtitle{
+	
+	position: absolute;
+	top:48%;
+	left:220px;
+	z-index: 4.4;
+	font-size:2em;
+	font-weight: 400;
+	color:#fff;
+	letter-spacing: 0px;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-duration: 2s;
+}
+
+#portfolio-intro{
+	
+	padding:220px 210px;
+	background-color: #F7F7F7;
+
+}
+
+article h2{
+	
+	margin-bottom: 80px;
+	font-size:5em;
+	font-weight: 600;
+	-webkit-animation-delay: .8s;
+	-webkit-animation-duration: 1.8s;
+}
+
+
+article h3{
+	
+	font-family: 'Playfair Display', serif;
+	font-size: 3.2em;
+	line-height: 2em;
+	font-weight: 600;
+}
+
+
+
+article p{
+	
+	font-family: 'Playfair Display', serif;
+	font-size: 1.4em;
+	line-height: 2em;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 1.8s;
+}
+
+
+#portfolio-board{
+	
+}
+#portfolio-board img{
+	width: 100%;
+	-webkit-animation-delay: .8s;
+	-webkit-animation-duration: 1.8s;
+	opacity: 0;
+}
+
+#ux-process{
+	
+	padding:220px 210px;
+	background-color: #F7F7F7;
+	
+}
+
+#ux-process h2{
+	
+	-webkit-animation-delay: 1.2s;
+	-webkit-animation-duration: 1.8s;
+}
+
+#ux-process p{
+	
+	-webkit-animation-delay: 1.6s;
+	-webkit-animation-duration: 1.8s;
+}
+
+.sm-space{
+	padding-bottom: 85px;
+}
+
+.md-space{
+	padding:120px 0px;
+}
+
+.lg-space{
+	padding:180px 0px;
+}
+
+.md-space-bottom{
+	
+		padding:0px 0px 180px 0px;
+}
+
+#elements-area{
+    
+    padding: 0px 0px 0px 90px;
+}
+
+#element1{
+	
+	-webkit-animation-delay: .5s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+}
+
+#element2{
+	
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+}
+
+#element3{
+	
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+}
+
+#element4{
+	
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+}
+
+#portfolio-parallax{
+
+min-height: 100vh;
+padding: 120px 0px;
+overflow:auto;
+
+}
+
+.plax-inner{
+	
+	position: relative;
+}
+
+.plax1{
+	
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 3;
+	width:800px;
+}
+
+.plax2{
+	
+	position: absolute;
+	top:450px;
+	right:-200px;
+	z-index: 4;
+	width:800px;
+
+}
+
+.plax3{
+	
+	position: absolute;
+	top:550px;
+	left:-350px;
+	z-index: 5;
+	width:550px;
+}
+
+#port-back-fixed{
+	
+	min-height: 980px;
+	
+}
+
+#portfolio-end{
+	
+	clear:both;
+	padding:80px 210px 280px 210px;
+	background-color:#dfe6ec;
+	
+}
+
+#get-next-portfolio{
+	
+	height: 450px;
+	position: relative;	
+	
+}
+
+.next-link{
+	
+	padding:180px 0px 0px 0px;
+}
+
+.next-link h4 {
+	
+	font-family: 'Playfair Display', serif;
+	font-size:3.4em;
+	font-weight: 600;
+	color:#fff;
+	position: relative;
+}
+
+.next-link a {
+	
+	color:#fff;
+	text-decoration: none;
+}
+
+.next-link a:hover{
+	
+	text-decoration: none;
+}
+
+.next-link span{
+	
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:.9em;
+}
+
+.blackhover{
+	
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,0.3);
+	
+}
+
+#get-next-portfolio:hover{
+	
+	cursor: pointer;
+}
+
+.next-arrow{
+	
+	width:25px;
+	margin-left:10px;
+}
+
+
+/* Goebel Specific
+---------------------------------------------------------*/
+
+.glogo{
+	
+	background-image:url('http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/g-logo.jpg');
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+
+/* Portfolio Archive Page 
+---------------------------------------------------------*/
+
+#portfolio-listing{
+	
+	padding-left:90px;
+}
+
+.portfolio-list-item{
+	
+	height:750px;
+	position:relative;
+}
+
+
+.portfolio-list-item:hover{
+	cursor:pointer;
+}
+.portfolio-list-item-copy{
+	
+	padding:80px;
+	position:absolute;
+	bottom:10px;
+	width:40%;
+	color:#fff;
+}
+.portfolio-list-item-copy a{
+	
+	color:#fff;
+	text-decoration:none;
+}
+
+
+/* About Aro Page
+--------------------------------------------------------*/
+
+#about-aro{
+	
+		padding:320px 210px;
+		background-color:#22232b;
+		position:relative;
+}
+
+#about-aro h2{
+	
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+	color:#fff;
+	font-size:6.5em;
+	line-height: 1em;
+}
+
+
+.bigtext{
+	
+	font-size:12em;
+	position: absolute;
+	top:-110px;
+	left:180px;
+	color:#1d1e25;
+	font-weight: 800;
+	font-family: 'Playfair Display', serif;
+	
+}
+
+.bigtextE{
+	
+	font-size:12em;
+	position: absolute;
+	top:0px;
+	left:150px;
+	color:#1d1e25;
+	font-weight: 800;
+	font-family: 'Playfair Display', serif;
+	
+}
+
+
+.bigtextS{
+	
+	font-size:12em;
+	position: absolute;
+	top:-100px;
+	left:110px;
+	color:#1d1e25;
+	font-weight: 800;
+	font-family: 'Playfair Display', serif;
+}
+#about-aro p{
+	
+	-webkit-animation-delay: 1.2s;
+	-webkit-animation-duration: .7s;
+	opacity: 0;
+	color:#8c8c8c;
+	margin-bottom:50px;
+	font-size:1.7em;
+	font-weight: 300;
+	line-height: 2em;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: .3px
+}
+
+#about-aro blockquote{
+	
+	padding:20px;
+	border:2px solid #E54948;
+	margin:90px 0px;
+	font-size:3em;
+	font-weight:bolder;
+	text-align:center;
+	line-height: .4em !important;
+	
+
+}
+
+.label{
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:1em;
+	text-transform: uppercase;
+	letter-spacing: 3.4px;
+	color:#E54948;
+	font-weight: lighter;
+
+}
+
+
+#about-aro hr{
+	
+	border:0px;
+	background-image: url('img/zigzag.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	display:block;
+    border:0px;
+    height:15px;
+	background-color: none;
+	background-size: contain;
+	margin-bottom: 100px;
+}
+
+#about-aro h4{
+	
+	font-size:2em;
+	margin-bottom: 40px;
+	color:#fff;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+#about-aro h4 span{
+	
+
+	font-size:.5em !important;
+	font-weight: 300;
+	margin-bottom: 7px;
+	display: inline-block;
+	color:#7c7c7c;
+	text-transform: none !important;
+}
+
+.rectangle{
+	
+	background-image: url('img/rectangle.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top:-60px;
+	left:-40px;
+	z-index: 42;
+	width: 100%;
+	height: 100%;
+}
