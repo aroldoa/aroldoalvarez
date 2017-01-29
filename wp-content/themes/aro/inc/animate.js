@@ -16,12 +16,12 @@ $(document).ready(function(){
         TweenMax.to("#navigation",1,{width:"600px",ease:Power2.easeInOut}); // grow out the menu
         TweenMax.to(".open-nav",.1,{autoAlpha:0});
         TweenMax.to(".close-nav",.5,{autoAlpha:1});
-        TweenMax.to(".menu-menu-container",.5, {autoAlpha: 1, left:"90px", ease:Power1.easeInOut, delay:.8}); //display the menu
+        TweenMax.to(".menu-navigation-container",.5, {autoAlpha: 1, left:"90px", ease:Power1.easeInOut, delay:.8}); //display the menu
     }
     
     function navClose(){
         TweenMax.to("#blackout", 1, {autoAlpha: 0}); // start the blackout overlay
-        TweenMax.to(".menu-menu-container",.4, {autoAlpha: 0, left:"30px", ease:Power1.easeInOut}); //display the menu
+        TweenMax.to(".menu-navigation-container",.4, {autoAlpha: 0, left:"30px", ease:Power1.easeInOut}); //display the menu
         TweenMax.to("#navigation",1,{width:"90px",ease:Power2.easeInOut}); // grow out the menu
         TweenMax.to(".close-nav",.1,{autoAlpha:0});
         TweenMax.to(".open-nav",.5,{autoAlpha:1});
@@ -141,7 +141,7 @@ $(document).ready(function(){
          
          
              
-    if (top.location.pathname === '/aroldoalvarez.com/user-experience-design-portfolio/')
+    if (top.location.pathname === '/aroldoalvarez/user-experience-design-portfolio/')
     
             {
         
@@ -161,7 +161,7 @@ $(document).ready(function(){
             
 
     
-    if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/the-skinmd/')
+    if (top.location.pathname === '/aroldoalvarez/portfolio-item/the-skin-md/')
     
             {
         
@@ -169,7 +169,7 @@ $(document).ready(function(){
                 
                 var ldSkinmd = new TimelineMax();
                 
-                ldSkinmd.to("#slide",.1,{backgroundColor:"#3564b6"}).to("#navigation", 1, { backgroundColor:"#28a2c5",borderRightColor:"#28a2c5"}).to(".site-menu",.1, {borderTopColor:"#02769a"}).to(".menu-menu-container ul li a",1,{color:"#ffffff"});
+                ldSkinmd.to("#slide",.1,{backgroundColor:"#3564b6"}).to("#navigation", 1, {backgroundColor:"#28a2c5",borderRightColor:"#28a2c5"}).to(".site-menu",.1, {borderTopColor:"#02769a"}).to(".menu-navigation-container ul li a",1,{color:"#ffffff"});
                 
                 
                
@@ -179,7 +179,7 @@ $(document).ready(function(){
                 
             }
             
-    if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/goebel-custom-pools/')
+    if (top.location.pathname === '/aroldoalvarez/portfolio-item/goebel-custom-pools/')
     
             {
               
@@ -187,7 +187,7 @@ $(document).ready(function(){
                 
                 var ldGoebel = new TimelineMax();
                 
-                ldGoebel.to("#slide",.1,{backgroundColor:"#4e7f90"}).to("#navigation", 1, { backgroundColor:"#38464f",borderRightColor:"#38464f"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-menu-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#1e2832"});
+                ldGoebel.to("#slide",.1,{backgroundColor:"#4e7f90"}).to("#navigation", 1, { backgroundColor:"#38464f",borderRightColor:"#38464f"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-navigation-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#1e2832"});
                 
                 
             } else{
@@ -195,7 +195,7 @@ $(document).ready(function(){
                 
             }  
             
- if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/northside-world-music/')
+ if (top.location.pathname === '/aroldoalvarez/portfolio-item/northside-world-music/')
     
             {
               
@@ -203,7 +203,7 @@ $(document).ready(function(){
                 
                 var ldNswm = new TimelineMax();
                 
-                ldNswm.to("#slide",.1,{backgroundColor:"#f26422"}).to("#navigation", 1, { backgroundColor:"#d03434",borderRightColor:"#d03434"}).to(".site-menu",.1, {borderTopColor:"#cb6839"}).to(".menu-menu-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#f6f6f6"});
+                ldNswm.to("#slide",.1,{backgroundColor:"#f26422"}).to("#navigation", 1, { backgroundColor:"#d03434",borderRightColor:"#d03434"}).to(".site-menu",.1, {borderTopColor:"#cb6839"}).to(".menu-navigation-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#f6f6f6"});
                 
                 
             } else{
@@ -213,7 +213,7 @@ $(document).ready(function(){
                 
                 
                 
-    if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/baby-education-south-texas/')
+    if (top.location.pathname === '/aroldoalvarez/portfolio-item/baby-education-south-texas/')
     
             {
               
@@ -221,7 +221,7 @@ $(document).ready(function(){
                 
                 var ldBest = new TimelineMax();
                 
-                ldBest.to("#slide",.1,{backgroundColor:"#4e7f90"}).to("#navigation", 1, { backgroundColor:"#38464f",borderRightColor:"#38464f"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-menu-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#437386"});
+                ldBest.to("#slide",.1,{backgroundColor:"#4e7f90"}).to("#navigation", 1, { backgroundColor:"#38464f",borderRightColor:"#38464f"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-navigation-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#437386"});
                 
                 
             } else{
@@ -231,7 +231,7 @@ $(document).ready(function(){
                 
                 
                 
-    if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/filetime-app/')
+    if (top.location.pathname === '/aroldoalvarez/portfolio-item/filetime-app/')
     
             {
               
@@ -247,7 +247,7 @@ $(document).ready(function(){
                 
             }    
             
-    if (top.location.pathname === '/aroldoalvarez.com/portfolio-item/watkins-appeals-wordpress-theme/')
+    if (top.location.pathname === '/aroldoalvarez/portfolio-item/watkins-law-theme/')
     
             {
               
@@ -255,14 +255,14 @@ $(document).ready(function(){
                 
                 var ldWatkins = new TimelineMax();
                 
-                  ldWatkins.to("#slide",.1,{backgroundColor:"#95627b"}).to("#navigation", 1, { backgroundColor:"#7793bd",borderRightColor:"#7793bd"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-menu-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#437386"});
+                  ldWatkins.to("#slide",.1,{backgroundColor:"#95627b"}).to("#navigation", 1, { backgroundColor:"#7793bd",borderRightColor:"#7793bd"}).to(".site-menu",.1, {borderTopColor:"#445e76"}).to(".menu-navigation-container ul li a",1,{color:"#ffffff"}).to("#portfolio-end",.1,{backgroundColor:"#437386"});
                 
             } else{
                 
                 
             } 
             
-    if (top.location.pathname === '/aroldoalvarez.com/about-aroldo-alvarez/')
+    if (top.location.pathname === '/aroldoalvarez/about-aroldo-alvarez/')
     
             {
               

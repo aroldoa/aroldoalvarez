@@ -20,39 +20,34 @@
 		<?php 
 		// the query
 		
-		$query = new WP_Query( array( 'post_type' => 'portfolios', 'orderby' => 'menu_order title',
-	'order'   => 'ASC', ) ); 
-		
-	
-		
+		$query = new WP_Query( array( 'post_type' => 'portfolios', 'orderby' => 'menu_order title','order'   => 'ASC', ) ); 
+			
 		?>
 		
-		
+
 		<?php if ( $query->have_posts() ) : ?>
-		
-			<!-- pagination here -->
-		
+			
 			<!-- the loop -->
 			<?php while ( $query->have_posts() ) : $query->the_post();
 			
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 			
-			?>
+        ?>
 			
-			
-				<div class="portfolio-list-item" style="background-image: url(<?php echo $image ['0'];?>); background-size:cover; background-repeat:no-repeat; background-position:center;">
-				<div class="blackhover"></div>
+		<a href="<?php the_permalink(); ?>">	
+        <div class="portfolio-list-item" style="background-image: url(<?php echo $image ['0'];?>); background-size:cover; background-repeat:no-repeat; background-position:center;">
+
+            <div class="blackhover"></div>
 				
-				<div class="portfolio-list-item-copy">
-					<a href="<?php the_permalink(); ?>">	
+            <div class="portfolio-list-item-copy">
+						
 						<span><?php the_excerpt(); ?></span>
 						<h2><?php the_title(); ?></h2>
-					</a>
-				</div>
-			
-				
-				</div>
-				
+					
+            </div>
+            
+        </div>
+        </a>	
 				
 			<?php endwhile; ?>
 			<!-- end of the loop -->

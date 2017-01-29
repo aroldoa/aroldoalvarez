@@ -104,12 +104,12 @@ add_action( 'widgets_init', 'aro_widgets_init' );
 function aro_scripts() {
 	
 	wp_enqueue_style('aro-reset', get_template_directory_uri() . '/inc/reset.css');
-	wp_enqueue_style('aro-bootcss','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+	wp_enqueue_style('aro-bootcss', get_template_directory_uri() . '/inc/bootstrap.min.css');
 	wp_enqueue_style( 'aro-style', get_stylesheet_uri() );
 	wp_enqueue_style('aro-animate', get_template_directory_uri() . '/inc/animate.css');
 	wp_enqueue_style('aro-gfonts','https://fonts.googleapis.com/css?family=Lekton:400,700|Open+Sans:300,400,400i,700,800|Playfair+Display:400,700,900|Quicksand:300,400');
-	wp_enqueue_script('aro-jquery','https://code.jquery.com/jquery-3.1.1.min.js');
-	wp_enqueue_script('aro-bootjs','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+	wp_enqueue_script('aro-jquery', get_template_directory_uri() . '/js/jquery.js');
+	wp_enqueue_script('aro-bootjs', get_template_directory_uri() . '/js/bootstrap.min.js');
 	wp_enqueue_script('aro-waypoints', get_template_directory_uri() . '/inc/jquery.waypoints.min.js');
 	wp_enqueue_script('aro-waypoints-inview', get_template_directory_uri() . '/inc/inview.min.js');
 	wp_enqueue_script('aro-stellerjs', get_template_directory_uri() . '/inc/jquery.stellar.min.js');

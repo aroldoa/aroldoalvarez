@@ -80,7 +80,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 define( 'WP_ALLOW_REPAIR', true );
 $_SERVER["HTTP_HOST"] = $_SERVER["SERVER_NAME"];
 $_SERVER["HTTP_HOST"] = $_SERVER["SERVER_NAME"];

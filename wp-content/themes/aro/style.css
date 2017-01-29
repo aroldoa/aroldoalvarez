@@ -177,7 +177,7 @@ h1 span{
 .showcase-subtitle{
 	
 	position: absolute;
-	top:58%;
+	top:60%;
 	left:220px;
 	z-index: 4;
 	font-size:2.5em;
@@ -265,7 +265,7 @@ a{
 
 }
 
-.menu-menu-container{
+.menu-navigation-container{
 	
 	position:relative;
 	top:30vh;
@@ -275,14 +275,14 @@ a{
 	visibility: hidden;
 }
 
-.menu-menu-container ul{
+.menu-navigation-container ul{
 	
 	display:block;
 	margin:0px;
 	padding:0px;
 }
 
-.menu-menu-container ul li{
+.menu-navigation-container ul li{
 	
 	display:block;
 	list-style-type:none;
@@ -293,7 +293,7 @@ a{
 	font-weight: 700;
 }
 
-.menu-menu-container ul li a{
+.menu-navigation-container ul li a{
 	
 	color:black;
 }
@@ -355,7 +355,7 @@ a{
 	position:absolute;
 	top:0;
 	left:0;
-	background-image: url('http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/skinmd-1.jpg');
+	background-image: url('http://localhost/aroldoalvarez/wp-content/uploads/2016/12/skinmd-1.jpg');
 	background-repeat: no-repeat;
 	height: 100%;
 	width:100%;
@@ -533,8 +533,8 @@ article h3{
 article p{
 	
 	font-family: 'Playfair Display', serif;
-	font-size: 1.4em;
-	line-height: 2em;
+	font-size: 1.5em;
+	line-height: 2.2em;
 	-webkit-animation-delay: 1s;
 	-webkit-animation-duration: 1.8s;
 }
@@ -744,7 +744,7 @@ overflow:auto;
 
 .glogo{
 	
-	background-image:url('http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/g-logo.jpg');
+	background-image:url('http://localhost/aroldoalvarez/wp-content/uploads/2016/12/g-logo.jpg');
 	background-repeat:no-repeat;
 	background-position:left;
 }
@@ -788,9 +788,9 @@ overflow:auto;
 
 #about-aro{
 	
-		padding:320px 210px;
-		background-color:#22232b;
-		position:relative;
+    padding:320px 210px;
+    background-color:#22232b;
+    position:relative;
 }
 
 #about-aro h2{

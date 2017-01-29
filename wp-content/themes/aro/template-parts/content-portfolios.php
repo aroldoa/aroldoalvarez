@@ -12,7 +12,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="container-fluid">
+        
 		<div id="portfolio-intro">
+            
+            
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
@@ -26,6 +29,7 @@
 			) );
 		?>
 		</div>
+        
 	</div><!-- .entry-content -->
 
 <section id="elements-area">
@@ -60,17 +64,11 @@
 		<?php the_field('ux_process'); ?>
 	</div>
 	
-	<div class="container">
-		<?php echo do_shortcode ('[rev_slider alias="skinmd-ux"]'); ?>
-	</div>
 	
 </section>
 
 
-<section id="port-back-fixed" style="background-image:url(<?php the_field('fixed_background'); ?>); background-attachment: fixed; background-size:cover; background-repeat:no-repeat;">
-	
-	
-</section>
+<section id="port-back-fixed" style="background-image:url(<?php the_field('fixed_background'); ?>); background-attachment: fixed; background-size:cover; background-repeat:no-repeat;"></section>
 
 
 

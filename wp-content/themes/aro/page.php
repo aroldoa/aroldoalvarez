@@ -28,14 +28,14 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'home' );
 				
 					
-				} else if( is_page(7) ){
+				} else if( is_page(17) ){
 					
 					
 					get_template_part( 'template-parts/content', 'portfolio' );
 					
 				
 					
-				} else if(is_page(9) ){
+				} else if(is_page(19) ){
 					
 					get_template_part( 'template-parts/content', 'aro' );
 					

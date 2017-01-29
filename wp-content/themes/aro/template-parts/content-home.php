@@ -38,6 +38,8 @@
 			
 		
 		<div class="container">
+            
+        <div class="row text-center">    
 		<?php
 			the_content();
 
@@ -46,6 +48,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+            </div>
 		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
@@ -55,7 +58,7 @@
 	<div class="container-fluid">
 		<div class="row no-gutter" style="padding-left:90px;">
 			<div class="col-md-5">
-				<a href="http://localhost/aroldoalvarez.com/portfolio-item/the-skinmd">
+				<a href="http://localhost/aroldoalvarez/portfolio-item/the-skin-md/">
 					<div id="project-item" class="skinmd">
 						<div class="skinmd-img"></div>
 						<h3>The SkinMD</h3>
@@ -65,7 +68,7 @@
 			</div>
 			<div class="col-md-7">
 				<div id="project-item" class="watkins">
-					<img class="img-responsive" src="http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/watkins.jpg"/>
+					<img class="img-responsive" src="http://localhost/aroldoalvarez/wp-content/uploads/2016/12/watkins.jpg"/>
 					<h3>Watkins Appeals</h3>
 					<h4>Website Design</h4>
 				</div>
@@ -74,14 +77,14 @@
 		<div class="row no-gutter" style="padding-left:90px;">
 			<div class="col-md-7">
 				<div id="project-item" class="goebel">
-					<img class="img-responsive" src="http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/goebel.jpg"/>
+					<img class="img-responsive" src="http://localhost/aroldoalvarez/wp-content/uploads/2016/12/goebel.jpg"/>
 					<h3>Goebel Pools</h3>
 					<h4>Brand, Website Design &amp; Development</h4>
 				</div>
 			</div>
 			<div class="col-md-5">
 				<div id="project-item" class="nswm">
-					<img class="img-responsive" src="http://localhost/aroldoalvarez.com/wp-content/uploads/2016/12/nswm.jpg"/>
+					<img class="img-responsive" src="http://localhost/aroldoalvarez/wp-content/uploads/2016/12/nswm.jpg"/>
 					<h3>Northside World Music</h3>
 					<h4>Brand, Website Design &amp; Development</h4>
 				</div>
